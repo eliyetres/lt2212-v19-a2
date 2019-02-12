@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # simdoc.py -- Don't forget to put a reasonable amount code comments
 # in so that we better understand what you're doing when we grade!
-
+#hello
 # add whatever additional imports you may need here
 import re
 
