@@ -112,13 +112,22 @@ def print_to_file(data, filename):
 vocab = get_vocab(fpath, 50)
 crude = getarticles(fpath, vocab, "crude")
 grain = getarticles(fpath, vocab, "grain")
-all={"crude":crude, "grain":grain}
+
+all={}
+for (k,v), (k2,v2) in zip(crude.items(), grain.items()):
+    all["crude/"+k] = v
+    all["grain/"+k2] = v2
 
 raw_data = create_rawdata(all)
 
+def concat_data(crude, grain):
+    """ Adds the articles in the folders togeather """
+    all_data={}
+    for (k,v), (k2,v2) in zip(crude.items(), grain.items()):
+        all["crude/"+k] = v
+        all["grain/"+k2] = v2
+    return all_data
 
-
-print(all)
 
 
 print(create_svd(raw_data, 2)) # 2 dimensional data
@@ -158,8 +167,9 @@ else:
 
 if args.tfidf:
     print("Applying tf-idf to raw counts.")
-    create_tf_idf(crude)
-    create_tf_idf(grain)
+    crude = getarticles(fpath, vocab, "crude")
+    grain = getarticles(fpath, vocab, "grain")
+    all_data = concat_data(crude, grain)
 
 if args.svddims:
     print("Truncating matrix to {} dimensions via singular value decomposition.".format(
