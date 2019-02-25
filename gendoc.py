@@ -92,6 +92,7 @@ def create_tf_idf(raw_data):
 
 def create_svd(data, n):
     """ Set -S 
+    
     Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """
     svd = TruncatedSVD(n)
     trans_data = svd.fit_transform(data)
@@ -102,7 +103,7 @@ vocab = get_vocab(fpath, 50)
 crude = getarticles(fpath, "crude", vocab)
 #grain = getarticles(fpath, "grain",vocab)
 
-create_svd(create_tf_idf(crude, 2))
+create_svd(create_tf_idf(crude), 2)
 
 ''' import json
 with open('crude.txt', 'w') as file:
