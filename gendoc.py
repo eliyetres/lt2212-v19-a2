@@ -96,20 +96,22 @@ def create_svd(dataframe, n):
 
     Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """
     svd = TruncatedSVD(n)
-
-    print(dataframe)
-    dataframe = dataframe.as_matrix()
-    
-    trans_data = svd.fit_transform(dataframe)
-    print(trans_data)
-    return trans_data
+    dataframe = dataframe.values
+    svd_data = svd.fit_transform(dataframe)
+    #print(svd_data)
+    return svd_data
 
 vocab = get_vocab(fpath, 50)
 crude = getarticles(fpath, "crude", vocab)
 #grain = getarticles(fpath, "grain",vocab)
+raw_data = create_rawdata(crude)
 
-create_svd(crude, 2)
-
+print("Truncated 2 dimensions")
+print("-----------------------")
+create_svd(raw_data, 2)
+print("Truncated 5 dimensions")
+print("-----------------------")
+create_svd(raw_data, 5)
 ''' import json
 with open('crude.txt', 'w') as file:
      file.write((crudedf)) # use `json.loads` to do the reverse '''
