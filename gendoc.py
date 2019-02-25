@@ -74,10 +74,10 @@ def getarticles(fpath, vocab, foldername):
 def create_rawdata(data_dict):
     """ Creates a Pandas data object from a nested dict of articles and their words and counts """
     raw_data = pd.DataFrame.from_dict(data_dict, orient="index")
-    dropped_lines = raw_data[raw_data.duplicated()].index.tolist()
-    print("Dropped {} files: ".format((len(dropped_lines))))
-    print("---------------------\n", dropped_lines)
-    raw_data = raw_data.drop_duplicates()
+    #dropped_lines = raw_data[raw_data.duplicated()].index.tolist()
+    #print("Dropped {} files: ".format((len(dropped_lines))))
+    #print("---------------------\n", dropped_lines)
+    raw_data = raw_data.drop_duplicates() # Remove duplicate vectors
     # print(datafr)
     return raw_data
 
@@ -100,7 +100,7 @@ def create_svd(dataframe, n):
     svd = TruncatedSVD(n)
     dataframe = dataframe.values
     svd_data = svd.fit_transform(dataframe)
-    # print(svd_data)
+    #print(svd_data)
     return svd_data
 
 
