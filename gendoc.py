@@ -68,6 +68,7 @@ def getarticles(fpath, foldername, vocab):
         # Add all subdicts to a nested dict
         dircorpus[filename] = articlecorpus
     # Here I need to check if any of the articles look the same, in that case remove on of them.
+    # Pandas dataframe drop duplicates
     return dircorpus
 
 
@@ -90,12 +91,16 @@ def create_tf_idf(raw_data):
     #print(td_if_data)
     return td_if_data
 
-def create_svd(data, n):
+def create_svd(dataframe, n):
     """ Set -S 
-    
+
     Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """
     svd = TruncatedSVD(n)
-    trans_data = svd.fit_transform(data)
+
+    print(dataframe)
+    dataframe = dataframe.as_matrix()
+    
+    trans_data = svd.fit_transform(dataframe)
     print(trans_data)
     return trans_data
 
@@ -103,7 +108,7 @@ vocab = get_vocab(fpath, 50)
 crude = getarticles(fpath, "crude", vocab)
 #grain = getarticles(fpath, "grain",vocab)
 
-create_svd(create_tf_idf(crude), 2)
+create_svd(crude, 2)
 
 ''' import json
 with open('crude.txt', 'w') as file:
@@ -144,6 +149,8 @@ else:
 
 if args.tfidf:
     print("Applying tf-idf to raw counts.")
+    create_tf_idf(crude)
+    create_tf_idf(grain)
 
 if args.svddims:
     print("Truncating matrix to {} dimensions via singular value decomposition.".format(
