@@ -45,7 +45,7 @@ def get_vocab(fpath, top_m=None):
     return vocab
 
 
-def getarticles(fpath, foldername, vocab):
+def getarticles(fpath, vocab, foldername):
     """ Opens and preprocesses files from subfolder.
     Returns a dict with article name and words and their counts compared to the total word count """
     dircorpus = {}
@@ -67,17 +67,18 @@ def getarticles(fpath, foldername, vocab):
                                     key=operator.itemgetter(1), reverse=True))
         # Add all subdicts to a nested dict
         dircorpus[filename] = articlecorpus
-    # Here I need to check if any of the articles look the same, in that case remove on of them.
-    # Pandas dataframe drop duplicates
     return dircorpus
+
 
 
 def create_rawdata(data_dict):
     """ Creates a Pandas data object from a nested dict of articles and their words and counts """
     raw_data = pd.DataFrame.from_dict(data_dict, orient="index")
+    dropped_lines = raw_data[raw_data.duplicated()].index.tolist()
+    print("Dropped {} files: ".format((len(dropped_lines))))
+    print("---------------------\n", dropped_lines)
+    raw_data = raw_data.drop_duplicates()
     # print(datafr)
-    # crudedf.to_csv("pandas2.csv")
-    # crudedf.to_csv("pandas2.csv", index=False) # Without article names
     return raw_data
 
 
@@ -88,8 +89,9 @@ def create_tf_idf(raw_data):
     transformer = TfidfTransformer()
     tfidf = transformer.fit_transform(raw_data)
     td_if_data = tfidf.toarray()
-    #print(td_if_data)
+    # print(td_if_data)
     return td_if_data
+
 
 def create_svd(dataframe, n):
     """ Set -S 
@@ -98,26 +100,34 @@ def create_svd(dataframe, n):
     svd = TruncatedSVD(n)
     dataframe = dataframe.values
     svd_data = svd.fit_transform(dataframe)
-    #print(svd_data)
+    # print(svd_data)
     return svd_data
 
-vocab = get_vocab(fpath, 50)
-crude = getarticles(fpath, "crude", vocab)
-#grain = getarticles(fpath, "grain",vocab)
-raw_data = create_rawdata(crude)
 
-print("Truncated 2 dimensions")
-print("-----------------------")
-create_svd(raw_data, 2)
-print("Truncated 5 dimensions")
-print("-----------------------")
-create_svd(raw_data, 5)
+def print_to_file(data, filename):
+    """Takes a data object and prints it to a .csv file. """
+    data.to_csv(filename+".csv")
+    #data.to_csv("pandas2.csv", index=False) # Without article names
+
+vocab = get_vocab(fpath, 50)
+crude = getarticles(fpath, vocab, "crude")
+grain = getarticles(fpath, vocab, "grain")
+all={"crude":crude, "grain":grain}
+
+raw_data = create_rawdata(all)
+
+
+
+print(all)
+
+
+print(create_svd(raw_data, 2)) # 2 dimensional data
+
+print_to_file(raw_data, "outtest")
+
 ''' import json
 with open('crude.txt', 'w') as file:
      file.write((crudedf)) # use `json.loads` to do the reverse '''
-
-
-
 
 
 parser = argparse.ArgumentParser(description="Generate term-document matrix.")
@@ -141,13 +151,10 @@ print("Loading data from directory {}.".format(args.foldername))
 if not args.basedims:
     print("Using full vocabulary.")
     vocab = get_vocab(fpath)
-    crude = getarticles(fpath, "crude", vocab)
-    grain = getarticles(fpath, "grain", vocab)
+
 else:
     print("Using only top {} terms by raw count.".format(args.basedims))
     vocab = get_vocab(fpath, args.basedims)
-    crude = getarticles(fpath, "crude", vocab)
-    grain = getarticles(fpath, "grain", vocab)
 
 if args.tfidf:
     print("Applying tf-idf to raw counts.")
