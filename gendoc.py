@@ -17,7 +17,6 @@ import operator
 
 # gendoc.py -- Don't forget to put a reasonable amount code comments
 # in so that we better understand what you're doing when we grade!
-fpath = '/reuters-topics/'
 
 
 # FUNCTIONS
@@ -70,17 +69,15 @@ def getarticles(fpath, vocab, foldername):
     return dircorpus
 
 
-
 def create_rawdata(data_dict):
     """ Creates a Pandas data object from a nested dict of articles and their words and counts """
     raw_data = pd.DataFrame.from_dict(data_dict, orient="index")
-    #dropped_lines = raw_data[raw_data.duplicated()].index.tolist()
-    #print("Dropped {} files: ".format((len(dropped_lines))))
-    #print("---------------------\n", dropped_lines)
-    raw_data = raw_data.drop_duplicates() # Remove duplicate vectors
+    dropped_lines = raw_data[raw_data.duplicated()].index.tolist()
+    print("Dropped {} articles: ".format((len(dropped_lines))))
+    print("---------------------\n", dropped_lines, "\n---------------------")
+    raw_data = raw_data.drop_duplicates()  # Remove duplicate vectors
     # print(datafr)
     return raw_data
-
 
 def create_tf_idf(raw_data):
     """ Set -T 
@@ -100,43 +97,21 @@ def create_svd(dataframe, n):
     svd = TruncatedSVD(n)
     dataframe = dataframe.values
     svd_data = svd.fit_transform(dataframe)
-    #print(svd_data)
+    # print(svd_data)
     return svd_data
 
 
 def print_to_file(data, filename):
-    """Takes a data object and prints it to a .csv file. """
-    data.to_csv(filename+".csv")
-    #data.to_csv("pandas2.csv", index=False) # Without article names
-
-vocab = get_vocab(fpath, 50)
-crude = getarticles(fpath, vocab, "crude")
-grain = getarticles(fpath, vocab, "grain")
-
-all={}
-for (k,v), (k2,v2) in zip(crude.items(), grain.items()):
-    all["crude/"+k] = v
-    all["grain/"+k2] = v2
-
-raw_data = create_rawdata(all)
+    """Takes a data object and prints it to a file. """
+    np.savetxt(filename, data)
 
 def concat_data(crude, grain):
     """ Adds the articles in the folders togeather """
-    all_data={}
-    for (k,v), (k2,v2) in zip(crude.items(), grain.items()):
-        all["crude/"+k] = v
-        all["grain/"+k2] = v2
+    all_data = {}
+    for (k, v), (k2, v2) in zip(crude.items(), grain.items()):
+        all_data["crude/"+k] = v
+        all_data["grain/"+k2] = v2
     return all_data
-
-
-
-print(create_svd(raw_data, 2)) # 2 dimensional data
-
-print_to_file(raw_data, "outtest")
-
-''' import json
-with open('crude.txt', 'w') as file:
-     file.write((crudedf)) # use `json.loads` to do the reverse '''
 
 
 parser = argparse.ArgumentParser(description="Generate term-document matrix.")
@@ -156,6 +131,8 @@ parser.add_argument("outputfile", type=str,
 args = parser.parse_args()
 
 print("Loading data from directory {}.".format(args.foldername))
+#fpath = '/reuters-topics/'
+fpath = '/'+args.foldername+'/'
 
 if not args.basedims:
     print("Using full vocabulary.")
@@ -165,17 +142,29 @@ else:
     print("Using only top {} terms by raw count.".format(args.basedims))
     vocab = get_vocab(fpath, args.basedims)
 
+
+crude = getarticles(fpath, vocab, "crude")
+grain = getarticles(fpath, vocab, "grain")
+all_data = concat_data(crude, grain)
+raw_data = create_rawdata(all_data)
+data_output = raw_data
+
 if args.tfidf:
     print("Applying tf-idf to raw counts.")
-    crude = getarticles(fpath, vocab, "crude")
-    grain = getarticles(fpath, vocab, "grain")
-    all_data = concat_data(crude, grain)
+    data_output = create_tf_idf(raw_data)
 
 if args.svddims:
     print("Truncating matrix to {} dimensions via singular value decomposition.".format(
         args.svddims))
+    data_output = create_svd(raw_data, args.svddims)
+
+
+data_output = create_svd(raw_data, 2)
 
 # THERE ARE SOME ERROR CONDITIONS YOU MAY HAVE TO HANDLE WITH CONTRADICTORY
 # PARAMETERS.
 
 print("Writing matrix to {}.".format(args.outputfile))
+print_to_file(data_output, args.outputfile)
+
+

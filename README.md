@@ -8,21 +8,15 @@ GU:         gusihaliel
 
 ## Additional instructions
 
-Document here additional command-line instructions or other details you
-want us to know about running your code.
-
-## File naming convention
-
-(Delete this section if it's fairly obvious what output file was
-created with what parameters.)
+Only part 1 is done so far, working on the remainder!
 
 ## Results and discussion
 
+I haven't been able to do question 6, after a couple of minutes I get "MemoryError". I managed to run it on the server.
+
 ### Vocabulary restriction.
 
-(Write what you chose for the vocabulary restriction for output file
-(2), you can give a brief impressionistic justification for why in one
-sentence or less.)
+I used a vocabulary restriction of 25 because after 25 there are almost no matches, and 25 seems to be a number my computer can handle.
 
 ### Result table
 
@@ -31,7 +25,3 @@ sentence or less.)
 ### The hypothesis in your own words
 
 ### Discussion of trends in results in light of the hypothesis
-
-## Bonus answers
-
-(Delete if you're not answering the bonus.)
