@@ -79,6 +79,7 @@ def create_rawdata(data_dict):
     # print(datafr)
     return raw_data
 
+
 def create_tf_idf(raw_data):
     """ Set -T 
 
@@ -104,6 +105,7 @@ def create_svd(dataframe, n):
 def print_to_file(data, filename):
     """Takes a data object and prints it to a file. """
     np.savetxt(filename, data)
+
 
 def concat_data(crude, grain):
     """ Adds the articles in the folders togeather """
@@ -131,8 +133,11 @@ parser.add_argument("outputfile", type=str,
 args = parser.parse_args()
 
 print("Loading data from directory {}.".format(args.foldername))
-#fpath = '/reuters-topics/'
 fpath = '/'+args.foldername+'/'
+
+if args.basedims >= args.svddims:
+    print("Error: Singular value decomposition dimensions must be lower than vocabulary limit.")
+    exit(1)
 
 if not args.basedims:
     print("Using full vocabulary.")
@@ -150,7 +155,6 @@ raw_data = create_rawdata(all_data)
 data_output = raw_data
 
 
-
 if args.tfidf:
     print("Applying tf-idf to raw counts.")
     data_output = create_tf_idf(raw_data)
@@ -166,12 +170,8 @@ if args.svddims:
         data_output = create_svd(raw_data, args.svddims)
 
 
-data_output = create_svd(raw_data, 2)
-
 # THERE ARE SOME ERROR CONDITIONS YOU MAY HAVE TO HANDLE WITH CONTRADICTORY
 # PARAMETERS.
 
 print("Writing matrix to {}.".format(args.outputfile))
 print_to_file(data_output, args.outputfile)
-
-
