@@ -10,13 +10,15 @@ GU:         gusihaliel
 
 Only part 1 is done so far, working on the remainder!
 
+I created an error message when trying to trunkate to dimensions higher than the vocabulary count. The terminal prints the error message: "Error: Singular value decomposition dimensions must be lower than vocabulary limit." and exits without errors.
+
 ## Results and discussion
 
-I haven't been able to do question 6, after a couple of minutes I get "MemoryError". I managed to run it on the server.
+All the output files are in the LT2212 folder on the server. 
 
 ### Vocabulary restriction.
 
-I used a vocabulary restriction of 25 because after 25 there are almost no matches, and 25 seems to be a number my computer can handle.
+Running anything using the full vocabulary resulted in a MemoryError on my computer, so i ran the files in the server. For output 2 I limited the words to the top 50.
 
 ### Result table
 
