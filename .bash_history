@@ -1,334 +1,3 @@
-wget http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/en-sv.xml.gz
-eliye@Permanganate ~
-$
-wget http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/en-sv.xml.gz
-unzip download.php\?f\=OpenSubtitles2018%2Fbn-sv.txt.zip
-unzip --help
-unzip --help
- ls
-unzip --help
-lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
-lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
-install apt-cyg /bin
-apt-cyg install nano
-apt-cyg install unzip
-wget http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/en-sv.xml.gz
-head -n 500 OpenSubtitles2018.bn-sv.sv > small_swedish.txt
-unzip download.php\?f\=OpenSubtitles2018%2Fbn-sv.txt.zip
-unzip download.php\?f\=OpenSubtitles2018%2bn-sv.txt.zip
-unzip download.php\@f\=OpenSubtitles2018%2Fen-sv.xml.gz
-unzip download.php\@f\=OpenSubtitles2018%2Fen-sv.xml.gz
-unzip download.php\@f\=OpenSubtitles2018%2Fen-sv.xml.gz
-apt-get install unzip
-apt-cyg install unzip
-ls
-which zip
-apt-cyg install zip
-which zip
-zip download.php\@f\=OpenSubtitles2018%2Fen-sv.xml.gz
-unzip download.php\@f\=OpenSubtitles2018%2Fen-sv.xml.gz
-
-ls
-wget http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/en-sv.xml.gz
-wget http://opus.nlpl.eu/download.php?f=OpenSubtitles2018/bn-sv.txt.zip
-unzip download.php\?f\=OpenSubtitles2018%2Fbn-sv.txt.zip
-head -n 500 OpenSubtitles2018.bn-sv.sv > small_swedish.txt
-mkdir
-mkdir newdir
-ls
-cd newdir/
-ls
-cd ..
-ls
-cp small_swedish.txt newdir
-cd ne
-cd newdir/
-ls
-sort file | uniq > sorted_file_nodoubles
-sort small_swedish.txt | uniq > sorted_file_nodoubles
-ls
-nano sorted_file_nodoubles 
-stout
-stdout 
-apt-cyg install stdout
-grep a sorted_file_nodoubles 
-grep 'a' sorted_file_nodoubles 
-grep 'test' sorted_file_nodoubles 
-grep test sorted_file_nodoubles 
-grep 'test' sorted_file_nodoubles 
-echo
-cut -d ’ ’ -f 1 small_swedish.txt.sorted > temp1
-cut -d '' -f 1 small_swedish.txt.sorted > temp1
-cut -d ' ' -f 1 small_swedish.txt.sorted > temp1
-cut -d ' ' -f 1 small_swedish.txt > temp1
-cut -d ' ' -f 1 sorted_file_nodoubles > temp1
-cut -d ’ ’ -f 1 small_swedish.txt > temp2
-cut -d ' ' -f 1 small_swedish.txt > temp2
-paste -d ’%%%’ temp1 temp2 > temp3
-ls
-stdout temp3
-cat temp3
-apt-cyg update
-ls
-cat small_swedish.txt 
-ls
-cat temp1
-/ab+c/
-ssh gusihaliel@eduserv.flov.gu.se
-find nlp
-find / -type f -name 'nlp'
-ls
-cd ..
-ls
-cd eliye/
-ls
-cd apt-cyg 
-ls
-cd ..
-cd ..
-cd ..
-cd ..
-ls
-cd home/
-ls
-cd eliye/
-ls
-lrzip
-ls
-lrzip what the moon brings (not yet used).txt.lrz - d
-lrzip -d what the moon brings (not yet used).txt.lrz
-lrzip -d What the moon Brings (not yet used).txt.lrz
-lrzip -d What the moon Brings.txt.lrz
-ls
-lrzip -d <What\ the\ Moon\ Brings\ \(not\ yet\ used\).txt.lrz >
-lrzip -d <What\ the\ Moon\ Brings\ \(not\ yet\ used\).txt.lrz>
-lrzip -d <What the Moon Brings \(not yet used).txt.lrz>
-lrzip -d <What the Moon Brings \(not yet used).txt.lrz>
-lrzip -d <What the Moon Brings \(not yet used).txt.lrz>
-lrzip -d <wlrz>
-lrzip -d <w.lrz>
-lrzip -d w.lrz
-lrzip -d TheThinginthemoonlight.txt
-lrzip -d Hypnos.txt
-lrzip -d Outsider.txt
-lrzip -d Descendant.txt
-lrzip -d He.txt
-pip install upgrade python
-python -m pip install --upgrade pip
-ssh gusihaliel@mltgpu.flov.gu.se
-ssh-keygen
-ssh gusihaliel@mltgpu.flov.gu.se
-ls ~/.ssh 
-ssh gusihaliel@mltgpu.flov.gu.se
-ssh-keygen -t rsa -b 4096 -C "eliyetres@hotmail.com"
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa
-ssh gusihaliel@mltgpu.flov.gu.se
-ssh gusihaliel@mltgpu.flov.gu.se
-ssh-copy-id gusihaliel@mltgpu.flov.gu.se
-ssh gusihaliel@mltgpu.flov.gu.se
-pip install numpy
-python -m pip install --upgrade pip
-pip install scipy
-pip install --upgrade pip
-pip install scipy
-pip install numpy
-ssh gusihaliel@eduserv.flov.gu.se
-ssh gusihaliel@eduserv.flov.gu.se
-ssh gusihaliel@eduserv.flov.gu.se
-ls
-cd ..
-cd ..
-ls
-ls
-cd ..
-ls
-ls
-cd ..
-eliye@Permanganate ~
-$ ssh gusihaliel@eduserv.flov.gu.se
-----------------------------------------
-Welcome to the host eduserv.flov.gu.se
-RedHat 7.5 x86_64
-----------------------------------------
-Support:
- Robert Adesam, robert.adesam@gu.se
-----------------------------------------
-Last login: Tue Feb  5 14:32:40 2019 from el666.lha.sgsnet.se
-[gusihaliel@GU.GU.SE@eduserv ~]$ ^C
-[gusihaliel@GU.GU.SE@eduserv ~]$ exit
-logout
-touch ~/.ssh/config
-$ ssh gusihaliel@eduserv.flov.gu.se
-ssh gusihaliel@eduserv.flov.gu.se
-ssh eduserv
-ssh eduserv
-ls
-git clone https://github.com/vladmaraev/lt2216-vt19.git
-ls
-cd lt2216-vt19/
-
-cd ..
-git push
-git push lt2216-vt19/
-cd lt2216-vt19/
-git init
-git push lt2216-vt19/
-cd ..
-git push lt2216-vt19/
-git commit -m "first test"
-cd lt2216-vt19/
-git commit -m "first test"
-git config --global user.email "eliyetres@hotmail.com"
-git config --global user.name "eliyetres"
-git commit -m "first test"
-git add elin.txt
-ls
-git add elin.txt
-git commit -m "first test"
-cd ..
-got push lt2216-vt19/
-git push lt2216-vt19/
-cd lt2216-vt19/
-git push elin.txt 
-git push
-git push
-git push
-git status
-git config user.email "gusihaliel@student.gu.se" && git connfig user.name "gusihaliel"
-git config user.email "gusihaliel@student.gu.se" && git config user.name "gusihaliel"
-ls
-git clone https://github.com/asayeed/lt2212-v19-a2/ (Links to an external site.)Links to an external site.
-git clone https://github.com/asayeed/lt2212-v19-a2/
-ls
-ls
-ls
-ls
-ssh eduserv
-ssh eduserv
-ls
-cd lt2212-v19-a2/
-git add .
-ls
-git commit -m
-git commit -m "test"
-git add . && git commit -m "test"
-git add . && git commit -m "test" && git push
-git push
-ssh eduserv
-git add . && git commit -m "test" && git push && ssh eduserv
-ssh gusihaliel@eduserv.gu.se
-ssh gusihaliel@eduserv.flov.gu.se
-git add . && git commit -m "new" && ssh eduserv
-git add . && git commit -m "new" && git push
-ssh eduserv
-ls
-cd ..
-ls
-scp -r lt2216-vt19 gusihaliel@eduserv.flov.gu.se:lt2216-vt19
-scp -r lt2216-vt19 gusihaliel@eduserv.flov.gu.se:lt2216-vt19
-scp -r lt2216-vt19 gusihaliel@eduserv.flov.gu.se:lt2216-vt19
-scp -r lt2216-vt19 gusihaliel@eduserv.flov.gu.se:lt2216-vt19
-scp -r gusihaliel@mltgpu.flov.gu.se:../../scratch lt2216-vt19
-scp -r gusihaliel@mltgpu.flov.gu.se:../../scratch/reuters-topics lt2216-vt19
-ssh eduserv
-ssd mlt
-ssh mltgpu
-ls
-ls
-ssh ed
-ssh eduserv
-ssh eduserv
-ssh eduserv
-ls
-cd lt2216-vt19/
-ls
-git checkout master
-git fetch upstream
-git merge upstream/master
-git init
-git merge upstream/master
-git fetch upstream
-git fetch upstream
-git checkout master
-git remore -v
-git remote -v
-git remote add upstream https://github.com/vladmaraev/lt2216-vt19.git
-git remote -v
-git checkout master
-git checkout master
-git fetch upstream
-git checkout master
-git push
-git merge upstream/master
-git merge upstream/master
-git fetch upstream
-ls
-cd lt2216-vt19/
-git fetch upstream
-git checkout master
-git push
-git push
-git push origin master
-git push origin master
-git remote set-url origin https://eliyetres@github.com/vladmaraev/lt2216-vt19.git
-git push origin master
-git push
-https://eliyetres:Uiselveti12@github.com/user/repo.git
-ls
-git push -u origin master
-git push -f origin master
-git push -f origin master
-git push -f origin master
-git log
-git push -u origin master'
-git push -u origin master
-git remote -v
-git remote set-url origin eliyetres@github.com:vladmaraev/lt2216-vt19.git
-git remote -v
-git push -u origin master
-git push -f origin master
-git push -f origin master
-git push -u origin master
-git remote -v
-git log
-git push
-git clone https://github.com/vladmaraev/lt2216-vt19.git
-cd ..
-git clone https://github.com/vladmaraev/lt2216-vt19.git
-ls
-rm -rf lt2216-vt19/
-git clone https://github.com/vladmaraev/lt2216-vt19.git
-git add .
-git init
-ls
-cd lt2216-vt19/
-git init
-git add .
-git commit -m "test"
-git push
-git push -u origin master
-git remote -v
-git add upstream https://github.com/vladmaraev/lt2216-vt19.git
-git remote add upstream https://github.com/vladmaraev/lt2216-vt19.git
-git remote -v
-git push
-git push -u origin master
-git push -f origin master
-git push -f origin master
-cd ..
-rm -rf lt2216-vt19/
-git clone ssh://eliyetres@github.com/vladmaraev/lt2216-vt19.git
-ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-git clone ssh://eliyetres@github.com/vladmaraev/lt2216-vt19.git
-ssh-keygen -t rsa -C "eliyetres.eliyetres@hotmail.com"
-git clone ssh://eliyetres@github.com/vladmaraev/lt2216-vt19.git
-ssh -T eliyetres@github.com
-ssh -T git@github.com
-ssh -T eliyetres@github.com
-git clone ssh://eliyetres@github.com/vladmaraev/lt2216-vt19.git
-git clone eliyetres@github.com/vladmaraev/lt2216-vt19.git
-git clone git@github.com/vladmaraev/lt2216-vt19.git
 git clone ssh://git@github.com/vladmaraev/lt2216-vt19.git
 ls
 cd lt2216-vt19/
@@ -429,3 +98,403 @@ scp lt2216-vt19/lab2.org gusihaliel@eduserv.flov.gu.se/lt2216-vt19
 scp lt2216-vt19/lab2.org gusihaliel@eduserv.flov.gu.se/lt2216-vt19/lab2.org
 scp -r lt2216-vt19/ gusihaliel@eduserv.flov.gu.se/
 scp -r lt2216-vt19/ gusihaliel@eduserv.flov.gu.se:
+scp -r lt2216-vt19/ gusihaliel@eduserv.flov.gu.se:
+git .
+git add .
+ls
+rm -rf gusihaliel\@eduserv.flov.gu.se/
+ls
+cd lt2216-vt19/
+git add .
+git commit -m "Added yes/no field options"
+git push
+ssh -L8099:localhost:8266 eduserv.flov.gu.se
+ssh -L8099:eliyetres:8266 eduserv.flov.gu.se
+ssh eduserv
+ssh eduserv
+eliye@Permanganate ~
+$ ssh eduserv
+----------------------------------------
+Welcome to the host eduserv.flov.gu.se
+RedHat 7.5 x86_64
+----------------------------------------
+Support:
+ Robert Adesam, robert.adesam@gu.se
+----------------------------------------
+Last login: Tue Feb 19 17:02:32 2019 from el666.lha.sgsnet.se
+[gusihaliel@GU.GU.SE@eduserv ~]$ ls
+final.py  lt2216-vt19  nlp
+[gusihaliel@GU.GU.SE@eduserv ~]$ cd lt2216-vt19/
+[gusihaliel@GU.GU.SE@eduserv lt2216-vt19]$ ls
+elin.txt  Figures  lab1.org  lab2.org  README.org  vxml-server
+[gusihaliel@GU.GU.SE@eduserv lt2216-vt19]$ exit
+logout
+eliye@Permanganate ~
+$ ssh eduserv
+----------------------------------------
+Welcome to the host eduserv.flov.gu.se
+RedHat 7.5 x86_64
+----------------------------------------
+Support:
+ Robert Adesam, robert.adesam@gu.se
+----------------------------------------
+Last login: Tue Feb 19 17:02:32 2019 from el666.lha.sgsnet.se
+[gusihaliel@GU.GU.SE@eduserv ~]$ ls
+final.py  lt2216-vt19  nlp
+[gusihaliel@GU.GU.SE@eduserv ~]$ cd lt2216-vt19/
+[gusihaliel@GU.GU.SE@eduserv lt2216-vt19]$ ls
+elin.txt  Figures  lab1.org  lab2.org  README.org  vxml-server
+[gusihaliel@GU.GU.SE@eduserv lt2216-vt19]$ exit
+logout
+cd lt2216-vt19/
+ls
+cd vxml-server/
+ls
+ssh mltgpu
+ls
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run --port 8099
+export FLASK_APP=app.py && export FLASK_ENV=development && flask run --port 8099
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run --port 8099
+python -m flask run --port 8099
+python app.py 
+pip install flask
+python -m pip install --upgrade pip
+python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
+python3 -m pip install flask
+flask run --port 8099
+flask run --port 8266
+flask run --port 8072
+flask run --port 8099
+flask run --port 8072
+flask run --port 8072
+flask run --port 8071
+flask run --port 8071
+flask run --port 8071
+flask run --port 8071
+ssh -L8071:localhost:8071 eduserv.flov.gu.se
+ssh -L8099:gusihaliel:8099 eduserv.flov.gu.se
+ssh eduserv
+flask run --port 8071
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run --port 8071
+flask run --port 8071
+ls
+cd lt2216-vt19/
+ls
+cd vxml-server/
+ls
+cd templates/
+ls
+ssh eduserv
+ssh eduserv
+scp lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:/lt2216-vt19/vxml-server/templates/
+scp lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:/lt2216-vt19/vxml-server/templates/lab1.xml
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+ls
+cd lt2212-v19-a2/
+ls
+ls
+cd lt2216-vt19/vxml-server/templates/
+ls
+cd ..
+cd ..
+cd ..
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+scp -r lt2216-vt19/vxml-server/templates/lab1.xml gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/templates
+cd lt2216-vt19/
+git add .
+git commit -m "added menu, bargein, break time"
+git push
+cd ..
+ls
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+cd ..
+cd eliye/
+ls
+cd lt2216-vt19/
+ls
+scp -r lt2216-vt19/vxml-server/templates gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp lt2216-vt19/vxml-server/app.py gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server/app.py gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+scp -r lt2216-vt19/vxml-server gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+cd ..
+ls
+scp -r lt2216-vt19/ gusihaliel@eduserv.flov.gu.se:
+scp -r lt2216-vt19/ gusihaliel@eduserv.flov.gu.se:
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+ls
+
+cd lt2216-vt19/
+git add .
+git commit -m "Part B"
+git push
+cd ..
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+ssh eduserv
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19
+ssh eduserv
+ssh eduserv
+ssh eduserv
+ssh eduserv
+ls
+cd lt2216-vt19/vxml-server/
+ls
+scp app.py gusihaliel@eduserv.flov.gu.se:lt2216-vt19/vxml-server/
+cd ..
+cd ..
+ls
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:/lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+cd lt2216-vt19/
+git add .
+git commit -m "forgot asking for leave date, updated part B"
+git commit -m "forgot asking for leave date, updated part B"
+cd ..
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+scp -r lt2216-vt19/vxml-server/ gusihaliel@eduserv.flov.gu.se:lt2216-vt19/
+cd lt2216-vt19/
+ls
+git add .
+git commit -m "Added asking for leave date for part A"
+git push
+cd ..
+pip install jupyter
+pip install numpy
+pip install python --upgrade
+python pip install python --upgrade
+pip install help
+pip install --help
+pip install --upgrade python
+pip install --upgrade python3
+which python
+pip list
+pip list --outdated
+pip install pip --upgrade
+pip install lxml --upgrade
+pip list --outdated
+pip uninstall cryptography
+
+pip list --outdated
+pip install pytest
+ls
+cd lt2212-v19-a2/
+git add.
+git add .
+git commit -m "added functions for getting word and counts, creating the raw data as a pandas object"
+git commit -m "added a function for creating SVD but is not working properly"
+git add .
+git commit -m "added a function for creating SVD but is not working properly"
+git push
+git push
+git remote -v
+git remote set-url origin git@github.com:eliyetres/lt2212-v19-a2.git
+git remote -v
+git push
+git add
+git add .
+git commit -m "added name to README"
+git push
+git add . && git commit -m "fixed markdown"
+git push
+git add . && git commit -m "fixed markdown"
+git push
+git add . && git commit -m "added function for SVD"
+git add . && git commit -m "added option to print to csv file"
+git add .
+git add . && git commit -m "removed duplicate vectors"
+git add . && git commit -m "SVD is working properly now"
+git push
+git add . && git commit -m "added all the functions to the main program, using correct parameters"
+cd ..
+scp -r lt2212-v19-a2/ gusihaliel@mltgpu.flov.gu.se:
+ls
+cd lt2212-v19-a2/
+git add .
+git commit -m "outputfiles 1 and 2"
+ssh mltgpu
+scp gusihaliel@mltgpu.flov.gu.se:lt2212-vt19-a2/ output6_SVD_1000.txt /output
+cd ..
+scp gusihaliel@mltgpu.flov.gu.se:lt2212-vt19-a2/output6_SVD_1000.txt lt2216-vt19/
+scp gusihaliel@mltgpu.flov.gu.se:/lt2212-vt19-a2/output6_SVD_1000.txt lt2216-vt19/
+scp gusihaliel@mltgpu.flov.gu.se:/lt2212-vt19-a2/output6_SVD_1000.txt lt2216-vt19
+ssh mltgpu
+scp gusihaliel@mltgpu.flov.gu.se:/lt2212-vt19-a2/output6_SVD_1000.txt lt2216-vt19/output6.txt
+ssh mltgpu
+ls
+scp gusihaliel@mltgpu.flov.gu.se:output6_SVD_1000.txt lt2216-vt19/output6.txt
+scp gusihaliel@mltgpu.flov.gu.se:output6_SVD_1000.txt C:\cygwin64\home\eliye\lt2212-v19-a2/output6.txt
+scp gusihaliel@mltgpu.flov.gu.se:output6_SVD_1000.txt C:/cygwin64/home/eliye/lt2212-v19-a2/output6.txt
+cd lt2212-v19-a2/
+gir add . 
+git add .
+git commit -m "added some output files"
+git push
+git add .git commit -m "failed to push output files, exceeds githubs file size limit..."
+git add . && git commit -m "failed to push output files, exceeds githubs file size limit..."
+git push
+git push
+git reset --soft HEAD^
+git reset HEAD output1.txt
+git commit -c ORIG_HEAD
+clear
+git commit -c "removing files, exceeding file size" ORIG_HEAD
+clear
+git add .
+git commit -m "removing output, file size too large"
+gir push
+git push
+gir reset head output1.txt
+cd lt2212-v19-a2/
+git reset head output1.txt
+git status
+git push
+git reset head output3_tf_idf.txt
+git push
+git checkout -- output1.txt
+git log --graph --oneline --all
+git rm --cached output1.txt
+git reset --soft HEAD^1
+git status
+git reset HEAD output1.txt
+git reset HEAD output2_limit25.txt
+git reset HEAD output3_tf_idf.txt
+git reset HEAD output5_SVD_100.txt
+git commit -m "output files exceeding github storage"
+git push
+git rm --cached output1.txt
+git rm --cached output3_tf_idf.txt
+git commit -m "output files exceeding github storage"
+git push
+cd lt2212-v19-a2/
+ls
+git rm output1.txt
+git committ --amend
+git commit --amend
+git commit --amend
+git push
+git push gendoc.py 
+git status
+git rm output1.txt
+cd lt2212-v19-a2/
+ls
+git status
+git rm output1.txt
+git rm --cached output.txt
+git rm --cached output1.txt
+git status
+git commit -m "remove"
+git push
+git status
+bfg --strip-blobs-bigger-than 50M
+git checkout output1.txt
+git rm --output1.txt
+git rm --cached output1.txt
+git reset HEAD output1.txt
+git reset HEAD output1.txt
+git reset HEAD output3_tf_idf.txt
+git rm --cached output1.txt
+git status
+git add .
+git comitt -m "1"
+git commit -m "1"
+git rm --cached output1.txt
+git reset HEAD output1.txt
+git commit -m "1"
+git push
+git filter-branch
+git push

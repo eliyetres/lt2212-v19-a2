@@ -21,37 +21,106 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""-	CHAR	0
+""1	LINE	0
+	failed to push output files, exceeds githubs file size limit...
+|3,1,1,1,1,0,1551138011,"failed to push output files, exceeds githubs file size limit..."
+"-	CHAR	0
 	 
-|3,1,36,0,1,0,1550522639," "
+|3,0,36,0,1,0,1550522639," "
 
 # File marks:
-'0  11  16  ~/lt2216-vt19/.git/MERGE_MSG
-|4,48,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
-'1  4  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,49,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
-'2  4  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,50,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
-'3  2  0  /mingw64/etc/gitconfig
-|4,51,2,0,1550519951,"/mingw64/etc/gitconfig"
-'4  14  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,52,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
-'5  12  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,53,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
-'6  14  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,54,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
-'7  12  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,55,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+'0  1  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,48,1,0,1551170803,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+'1  1  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,49,1,0,1551170803,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+'2  3  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,50,3,0,1551138300,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+'3  3  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,51,3,0,1551138300,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+'4  3  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,52,3,0,1551138300,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+'5  11  16  ~/lt2216-vt19/.git/MERGE_MSG
+|4,53,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+'6  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,54,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+'7  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,55,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+'8  2  0  /mingw64/etc/gitconfig
+|4,56,2,0,1550519951,"/mingw64/etc/gitconfig"
+'9  14  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,57,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
 
 # Jumplist (newest first):
+-'  1  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,39,1,0,1551170803,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+-'  1  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,39,1,0,1551170803,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+-'  3  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,39,3,0,1551138300,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+-'  3  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,39,3,0,1551138300,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+-'  3  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,39,3,0,1551138300,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
+-'  1  0  ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+|4,39,1,0,1551137981,"~/lt2212-v19-a2/.git/COMMIT_EDITMSG"
 -'  11  16  ~/lt2216-vt19/.git/MERGE_MSG
 |4,39,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  11  16  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  11  16  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  11  16  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  11  16  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  11  16  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,11,16,1550522709,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522613,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522613,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522613,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522613,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522613,"~/lt2216-vt19/.git/MERGE_MSG"
 -'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
 |4,39,1,0,1550522613,"~/lt2216-vt19/.git/MERGE_MSG"
 -'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
 |4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
 -'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
 |4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  4  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,4,0,1550522455,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522355,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522355,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522355,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522355,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,1,0,1550522355,"~/lt2216-vt19/.git/MERGE_MSG"
 -'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
 |4,39,1,0,1550522355,"~/lt2216-vt19/.git/MERGE_MSG"
 -'  2  0  /mingw64/etc/gitconfig
@@ -62,6 +131,86 @@
 |4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
 -'  2  0  /mingw64/etc/gitconfig
 |4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  2  0  /mingw64/etc/gitconfig
+|4,39,2,0,1550519951,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
+-'  1  0  /mingw64/etc/gitconfig
+|4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
 -'  1  0  /mingw64/etc/gitconfig
 |4,39,1,0,1550519898,"/mingw64/etc/gitconfig"
 -'  1  0  /mingw64/etc/gitconfig
@@ -80,12 +229,36 @@
 |4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
 -'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
 |4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
--'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,39,1,0,1550248769,"~/lt2216-vt19/.git/MERGE_MSG"
--'  1  0  ~/lt2216-vt19/.git/MERGE_MSG
-|4,39,1,0,1550248769,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  14  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  14  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  14  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  14  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  12  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,12,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
+-'  14  0  ~/lt2216-vt19/.git/MERGE_MSG
+|4,39,14,0,1550248873,"~/lt2216-vt19/.git/MERGE_MSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/lt2212-v19-a2/.git/COMMIT_EDITMSG
+	*	1551138011	0
+	"	3	0
+	.	3	0
+	+	3	0
 
 > ~/lt2216-vt19/.git/MERGE_MSG
 	*	1550522680	0
