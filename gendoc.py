@@ -149,6 +149,8 @@ all_data = concat_data(crude, grain)
 raw_data = create_rawdata(all_data)
 data_output = raw_data
 
+
+
 if args.tfidf:
     print("Applying tf-idf to raw counts.")
     data_output = create_tf_idf(raw_data)
@@ -156,7 +158,12 @@ if args.tfidf:
 if args.svddims:
     print("Truncating matrix to {} dimensions via singular value decomposition.".format(
         args.svddims))
-    data_output = create_svd(raw_data, args.svddims)
+    if args.tfidf:
+        # Selecting both TF-IDF and SVF
+        data_output = pd.DataFrame(data_output)
+        data_output = create_svd(data_output, args.svddims)
+    else:
+        data_output = create_svd(raw_data, args.svddims)
 
 
 data_output = create_svd(raw_data, 2)
