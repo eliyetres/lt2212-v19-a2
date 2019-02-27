@@ -87,19 +87,19 @@ def create_tf_idf(raw_data):
     td_if_data = tfidf.toarray()
     # Add back article names and word column/rows
     words = raw_data.keys()
-    articles = raw_data.index.values   
-    td_if_data = pd.DataFrame(td_if_data, columns=words, index=articles)  
+    articles = raw_data.index.values
+    td_if_data = pd.DataFrame(td_if_data, columns=words, index=articles)
     return td_if_data
 
 
 def create_svd(dataframe, articles, n):
     """ Set -S 
 
-    Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """   
+    Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """
     svd = TruncatedSVD(n)
     dataframe = dataframe.values
     svd_data = svd.fit_transform(dataframe)
-    svd_data = pd.DataFrame(svd_data, index=articles) 
+    svd_data = pd.DataFrame(svd_data, index=articles)
     return svd_data
 
 
@@ -160,7 +160,7 @@ grain = getarticles(fpath, vocab, "grain")
 all_data = concat_data(crude, grain)
 raw_data = create_rawdata(all_data)
 data_output = raw_data
-articles = raw_data.index.values # Save names of articles
+articles = raw_data.index.values  # Save names of articles
 
 
 if args.tfidf:
@@ -173,7 +173,7 @@ if args.svddims:
     if args.tfidf:
         # Selecting both TF-IDF and SVF
         data_output = pd.DataFrame(data_output)
-        data_output = create_svd(data_output, articles,args.svddims)
+        data_output = create_svd(data_output, articles, args.svddims)
     else:
         data_output = create_svd(raw_data, articles, args.svddims)
 
@@ -182,5 +182,4 @@ if args.svddims:
 # PARAMETERS.
 
 print("Writing matrix to {}.".format(args.outputfile))
-#print_to_file(pd.DataFrame(data_output), args.outputfile) 
 print_to_file(data_output, args.outputfile)

@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # simdoc.py -- Don't forget to put a reasonable amount code comments
 # in so that we better understand what you're doing when we grade!
-#hello
+
 # add whatever additional imports you may need here
 import re
 
@@ -21,31 +21,28 @@ args = parser.parse_args()
 print("Reading matrix from {}.".format(args.vectorfile))
 
 
-
-def average_sim(text):
-    """" Prints four values, two for each topic.  
-    
-    For each of the two topics, print the average similarity of every document vector with that topic to every other vector with that same topic (for simplicity, including itself, if you want), averaged over the entire topic. the average similarity of every document vector with that topic to every document vector in the other topic, averaged over the entire topic. """
-    print(args.vectorfile)
-    df= pd.DataFrame(pd.read_csv(text, index_col=0))
-    crude = df.filter(like='crude',axis=0)
-    grain = df.filter(like='grain',axis=0)
+def average_sim(filename):
+    """" Calculates the average cosine similarity between two topics crude and grain. """
+    df = pd.DataFrame(pd.read_csv(filename, index_col=0))
+    crude = df.filter(like='crude', axis=0)
+    grain = df.filter(like='grain', axis=0)
     crude_crude = round(np.mean(cosine_similarity(crude, crude)), 2)
     grain_grain = round(np.mean(cosine_similarity(grain, grain)), 2)
-    crude_grain = round(np.mean(cosine_similarity(crude,grain)), 2)
-    grain_crude = round(np.mean(cosine_similarity(grain,crude)),2)
-    print("Average similarity between {} {}.".format("crude-crude", crude_crude))
-    print("Average similarity between {} {}.".format("grain-grain", grain_grain))
-    print("Average similarity between {} {}.".format("crude-grain", crude_grain))
-    print("Average similarity between {} {}.".format("grain-crude", grain_crude))
-    
+    crude_grain = round(np.mean(cosine_similarity(crude, grain)), 2)
+    grain_crude = round(np.mean(cosine_similarity(grain, crude)), 2)
+    results = [crude_crude, grain_grain, crude_grain, grain_crude]
+    return results
 
-
-
-        
-average_sim(args.vectorfile)
 
 def print_table(results):
-    """ Prints the results to the console """
-    res = 0
-    return res
+    print("Average similarity between {} {}.".format(
+        "crude-crude", results[0]))
+    print("Average similarity between {} {}.".format(
+        "grain-grain", results[1]))
+    print("Average similarity between {} {}.".format(
+        "crude-grain", results[2]))
+    print("Average similarity between {} {}.".format(
+        "grain-crude", results[3]))
+
+
+print_table(average_sim(args.vectorfile))
