@@ -76,7 +76,6 @@ def create_rawdata(data_dict):
     print("Dropped {} articles: ".format((len(dropped_lines))))
     print("---------------------\n", dropped_lines, "\n---------------------")
     raw_data = raw_data.drop_duplicates()  # Remove duplicate vectors
-    # print(datafr)
     return raw_data
 
 
@@ -84,27 +83,33 @@ def create_tf_idf(raw_data):
     """ Set -T 
 
     Transforms raw data into TF-IDF values (after filtering -B)."""
-    transformer = TfidfTransformer()
-    tfidf = transformer.fit_transform(raw_data)
+    tfidf = TfidfTransformer(smooth_idf=True).fit_transform(raw_data)
     td_if_data = tfidf.toarray()
-    # print(td_if_data)
+    # Add back article names and word column/rows
+    words = raw_data.keys()
+    articles = raw_data.index.values   
+    td_if_data = pd.DataFrame(td_if_data, columns=words, index=articles)  
     return td_if_data
 
 
-def create_svd(dataframe, n):
+def create_svd(dataframe, articles, n):
     """ Set -S 
 
-    Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """
+    Transform the term-document matrix by klearn's TruncatedSVD  operation into a document matrix with a feature space of dimensionality n. """   
     svd = TruncatedSVD(n)
     dataframe = dataframe.values
     svd_data = svd.fit_transform(dataframe)
-    # print(svd_data)
+    svd_data = pd.DataFrame(svd_data, index=articles) 
     return svd_data
 
 
 def print_to_file(data, filename):
     """Takes a data object and prints it to a file. """
-    np.savetxt(filename, data)
+    if filename[-3:] == "csv":
+        print("Creating csv file.")
+        pd.DataFrame(data).to_csv(filename, mode='w')
+    else:
+        np.savetxt(filename, data)
 
 
 def concat_data(crude, grain):
@@ -135,9 +140,11 @@ args = parser.parse_args()
 print("Loading data from directory {}.".format(args.foldername))
 fpath = '/'+args.foldername+'/'
 
-if args.basedims >= args.svddims:
-    print("Error: Singular value decomposition dimensions must be lower than vocabulary limit.")
-    exit(1)
+
+if args.basedims and args.svddims:
+    if args.basedims <= args.svddims:
+        print("Error: Singular value decomposition dimensions must be lower than vocabulary limit.")
+        exit(1)
 
 if not args.basedims:
     print("Using full vocabulary.")
@@ -153,6 +160,7 @@ grain = getarticles(fpath, vocab, "grain")
 all_data = concat_data(crude, grain)
 raw_data = create_rawdata(all_data)
 data_output = raw_data
+articles = raw_data.index.values # Save names of articles
 
 
 if args.tfidf:
@@ -165,13 +173,14 @@ if args.svddims:
     if args.tfidf:
         # Selecting both TF-IDF and SVF
         data_output = pd.DataFrame(data_output)
-        data_output = create_svd(data_output, args.svddims)
+        data_output = create_svd(data_output, articles,args.svddims)
     else:
-        data_output = create_svd(raw_data, args.svddims)
+        data_output = create_svd(raw_data, articles, args.svddims)
 
 
 # THERE ARE SOME ERROR CONDITIONS YOU MAY HAVE TO HANDLE WITH CONTRADICTORY
 # PARAMETERS.
 
 print("Writing matrix to {}.".format(args.outputfile))
+#print_to_file(pd.DataFrame(data_output), args.outputfile) 
 print_to_file(data_output, args.outputfile)
