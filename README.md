@@ -37,4 +37,8 @@ allfilestdifsvd1000|0.11|0.10|0.07|0.07
 
 ### The hypothesis in your own words
 
+We convert the word frequency of the articles of the two classes into vectors that represent the words by numbers. We usec cosine similarity by comparing  documents belonging to the the classes. The fewer the words the documents have in common the lower the cosine similarity will be. Singular-value decomposition (SVD) trunkates the size or the matrices making it faster to compute.
+
 ### Discussion of trends in results in light of the hypothesis
+
+Words that appear in similar parts of text should mean they are close in meaning. SVD reduces the number of rows while preserving the similarity structure. The cosine similarity shows the cosine angel between the two vectors.
