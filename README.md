@@ -12,7 +12,8 @@ I created an error message when trying to trunkate to dimensions higher than the
 
 ## Results and discussion
 
-Running anything using the full vocabulary resulted in a MemoryError on my computer, so i ran the files in the server. All the output files are in the LT2212-vt-19-a2 folder on the server. 
+Running anything using the full vocabulary resulted in a MemoryError on my computer, so I ran the files in the server. ~~All the output files are in the LT2212-vt-19-a2 folder on the server.~~
+I added a .zip file containing all the outputs.
 
 gendoc.py outputs a csv file with article name as columns and words as rows. simdoc.py takes the output file and calculates the cosine similarity between the  articles from crude and grain respectively.
 
